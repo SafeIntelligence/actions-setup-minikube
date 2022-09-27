@@ -6,7 +6,8 @@ const checkEnvironment = require('./check-environment');
 const configureEnvironment = require('./configure-environment');
 const loadInputs = require('./load-inputs');
 const download = require('./download');
-const install = require('./install');
+const install = require('./install').install;
+const waitForNodeAvaliability = require('./install').waitForNodeAvaliability;
 
 const run = async () => {
   checkEnvironment();
